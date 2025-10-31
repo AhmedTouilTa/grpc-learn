@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/AhmedTouilTa/grpc-learn/pb";
+
+message HelloMessage {
+    string greetingMessage = 1;
+}
+
+message HelloReply {
+    string replyMessage = 1;
+}
+
+service HelloSayer {
+    rpc SayHello (HelloMessage) returns (HelloReply) {}
+}
