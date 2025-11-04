@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 )
 
-var address string = ":50051"
+var address string = "0.0.0.0:50051"
 
 type server struct {
 	pb.UnimplementedHelloSayerServer
